@@ -1,0 +1,21 @@
+h1. authenticate_to_smtp
+
+bq. Mail : Authenticate to SMTP Server
+
+<pre>
+./authenticate_to_smtp.pl -remote=smtp -login=xxx -pw=xxx
+</pre>
+
+<pre>
+<- 220 castle-black.westeros ESMTP Exim 4.80 Fri, 12 Jun 2015 16:39:23 +0200
+-> EHLO domain.tld
+<- 250-castle-black.westeros Hello domain.tld [195.154.229.35]
+<- 250-SIZE 52428800
+<- 250-8BITMIME
+<- 250-PIPELINING
+<- 250-AUTH PLAIN LOGIN
+<- 250-STARTTLS
+<- 250 HELP
+-> AUTH PLAIN xxx
+<- 235 Authentication succeeded
+</pre>
