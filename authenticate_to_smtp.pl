@@ -11,6 +11,7 @@ use MIME::Base64;
 
 my %long_opts = (remote => "smtpauth", port => "smtp");
 GetOptions("remote=s" => \$long_opts{remote},
+	   "port=i" => \$long_opts{port},
 	   "login=s" => \$long_opts{login},
 	   "pw=s" => \$long_opts{pw},
     ) or die "bad options";
